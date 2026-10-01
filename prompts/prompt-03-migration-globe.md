@@ -1,0 +1,13 @@
+# Prompt 03 — Great Migrations Globe
+
+Create an interactive 3D experience that tracks the great animal migrations of the planet. It should feel like the opening sequence of a big-budget nature documentary crossed with a mission-control screen, not like a web page.
+
+At the center: the Earth, rendered in code (realistic or stylized, your choice), suspended in darkness. Give it a living surface: a soft atmospheric rim, oceans that catch the light, the day/night line, seasons you can feel. Across it, the migrations themselves: humpback whales moving between feeding and breeding waters, arctic terns flying pole to pole, wildebeest circling the Serengeti and Masai Mara, monarch butterflies drifting between Canada and Mexico, caribou crossing the tundra. Each one should be visualized in a way that fits the species (a stream of particles, a swarm, a slow-moving herd, a pulsing trail) rather than the same generic line repeated. Use lighting and post-processing (glow, depth of field, film grain, whatever serves the mood) to make it cinematic.
+
+The globe is the controller. It can be grabbed and spun with real inertia, and even when nobody touches it, it should subtly react to the pointer, as if it's breathing. A timeline of the twelve months lets the viewer scrub through the year and watch the migrations advance, pause and reverse with the seasons. Selecting a species should trigger a directed camera move: the view swoops toward the route, focus shifts, and information assembles itself around the path.
+
+Surround the globe with a data layer built from plausible (made-up but grounded in real behavior) figures: distance covered, population estimates, current position along the route, water temperature or weather on the path, threats and conservation status, and a live-feeling "sightings" ticker. Make the typography exquisite and part of the scene itself, with no flat panels stacked on top of a 3D canvas.
+
+Aim for the kind of piece that gets featured on award galleries and makes other developers open the dev tools to understand it. Avoid scroll-driven template layouts, SaaS dashboard patterns and grids of cards. Every state change needs its own crafted transition. Include at least one interaction or visual idea that feels genuinely new.
+
+Where it adds to the experience, generate supporting images with OpenAI's GPT Image 2.5 model, run through the Codex CLI using my existing Codex subscription (no separate API key, no other image generator), for example a documentary-style portrait of the species that appears when its migration is selected. The globe, the routes and all the animation must be built in code.
